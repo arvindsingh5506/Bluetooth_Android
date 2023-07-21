@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Switch
+        android:id="@+id/switchBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/listViewPairedDevices"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="54dp"
+        android:text="Enable Bluetooth" />
+
+    <Button
+        android:id="@+id/buttonDiscoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listViewPairedDevices"
+        android:layout_marginBottom="5dp"
+        android:text="Make Discoverable" />
+
+    <ListView
+        android:id="@+id/listViewPairedDevices"
+        android:layout_width="167dp"
+        android:layout_height="429dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="72dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="379dp"
+        android:textOff="HFP OFF"
+        android:textOn="HFP ON" />
+
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggleButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="38dp"
+        android:text="HFP:Disable"
+        android:textSize="18sp" />
+
+    <ToggleButton
+        android:id="@+id/a2dpButton"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/buttonDiscoverable"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="-67dp"
+        android:textOff="A2DP OFF"
+        android:textOn="A2DP ON" />
+
+    <TextView
+        android:id="@+id/a2dpStatus"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a2dpButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="250dp"
+        android:text="A2DP:Disable"
+        android:textSize="18sp" />
+
+</RelativeLayout>
